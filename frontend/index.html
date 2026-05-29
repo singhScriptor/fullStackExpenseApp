@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id ="form">
+        <div class="main-header">
+            <h1 id="main-header">Expense-Tracker</h1>
+        </div>
+        <div class="details">
+            <label for="name">Expense-Name:</label>
+            <input type="text" name="name" id="expense" required><br><br>
+            <textarea name="description" id="description" placeholder="description" required></textarea>
+            <select name="options" id="options" required>
+                <option value="">Select_here</option>
+                <option value="grocery">grocery</option>
+                <option value="medicine">medicine</option>
+                <option value="travel">travel</option>
+            </select><br>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    <div class="userlist">
+        <ul class="userl" id="userlist"></ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
